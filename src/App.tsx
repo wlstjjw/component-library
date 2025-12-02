@@ -5,7 +5,11 @@ import Badge from '@/components/jinseo/Badge'
 function App() {
   return (
     <>
-      <Badge />
+      <Badge
+        variant="light"
+        size="m"
+        color="primary"
+      />
     </>
   )
 }
