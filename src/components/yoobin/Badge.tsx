@@ -96,7 +96,7 @@ const StyledBadge = styled.div<{
         return $color === "gray" ? `0.1rem solid var(--neutrals-200)` : `0.1rem solid var(--${$color}-300)`;
     }};
   position: relative;
-  gap: 2px;
+  gap: 0.2rem;
 
       svg {
         width: ${({ $size }) => {
