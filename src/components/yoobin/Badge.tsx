@@ -99,6 +99,7 @@ const StyledBadge = styled.div<{
   gap: 0.2rem;
 
       svg {
+        display: inline-block;
         width: ${({ $size }) => {
             switch ($size) {
             case "s":
@@ -119,18 +120,19 @@ const StyledBadge = styled.div<{
                 return "1.8rem";
             }
         }};
-        fill: ${({ $variant, $color }) => {
-        if ($variant === "filled") return "var(--white)";
+        svg{
+            fill: ${({ $variant, $color }) => {
+                if ($variant === "filled") return "var(--white)";
 
-        switch ($color) {
-            case "neutrals":
-            return "var(--neutrals-600)";
-            case "gray":
-            return "var(--neutrals-400)";
-            default:
-            return `var(--${$color}-500)`;
-        }
-        }};
+                switch ($color) {
+                    case "neutrals":
+                    return "var(--neutrals-600)";
+                    case "gray":
+                    return "var(--neutrals-400)";
+                    default:
+                    return `var(--${$color}-500)`;
+                }
+            }};
         }
     }
 `;
