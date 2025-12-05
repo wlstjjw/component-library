@@ -1,4 +1,4 @@
-####✅react ts -> tailwind설치<br><br>
+#### ✅react ts -> tailwind설치
 1️⃣ 터미널에 npm create vite@latest ( vite-project -> React -> ts)<br>
 2️⃣ cd vite-project에서 npm install<br>
 3️⃣ 다음 npm install tailwindcss @tailwindcss/vite<br>
@@ -24,14 +24,16 @@
 
 <hr>
 <br><br>
-####✅검토 해야할 것<br>
 
-#####1️⃣ atomic 하지 않은 컴포넌트를 만들 때 emotion? css/scss/module? tailwind?<br>
+#### ✅검토 해야할 것
+
+##### 1️⃣ atomic 하지 않은 컴포넌트를 만들 때 emotion? css/scss/module? tailwind?
     ######1-1. 각 라이브러리에 커스텀 잘 되는지 확인하기 (12/5)<br>
       => emotino이 가장 스타일링 코드가 짧고 효율적, emotion 사용 예정<br>
 
-#####2️⃣ 페이지에 어떤 스타일 라이브러리 쓸 지 검토하기<br>
-    ######2-1.  tailwind 효율적인지 데모 페이지 만들어서 확인하기
+##### 2️⃣ 페이지에 어떤 스타일 라이브러리 쓸 지 검토하기<br>
+    
+    ###### 2-1.  tailwind 효율적인지 데모 페이지 만들어서 확인하기
       
       => 🗂 emotion 사용 시
       ![alt text](image.png)
