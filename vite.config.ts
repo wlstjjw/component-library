@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import path from 'path'
 import svgr from "vite-plugin-svgr";
+import tailwindcss from "@tailwindcss/vite";
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -11,6 +12,7 @@ export default defineConfig({
         plugins: ["@emotion"],
       },
     }),
+    tailwindcss(),
     svgr({
       // SVG 파일을 React 컴포넌트로 변환
       svgrOptions: {

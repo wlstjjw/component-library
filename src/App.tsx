@@ -10,7 +10,7 @@ function App() {
     <>
       <Global styles={globalStyle()} />
       <JinseoPage />
-      <YoobinPage />
+      {/* <YoobinPage /> */}
     </>
   )
 }

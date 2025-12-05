@@ -1,28 +1,4 @@
-✅react ts -> tailwind설치
-1️⃣ npm create vite@latest ( vite-project -> React -> ts)
-2️⃣ cd vite-project에서 npm install
-3️⃣ 다음 npm install tailwindcss @tailwindcss/vite
-4️⃣ vite.config.ts에서 아래 추가
-    import { defineConfig } from 'vite'
-    import react from '@vitejs/plugin-react'
-    import tailwindcss from '@tailwindcss/vite'
-    // https://vite.dev/config/
-    export default defineConfig({
-      plugins: [
-        react(),
-        tailwindcss()
-      ],
-    })
-4️⃣ tailwind.config.ts에서 아래 추가
-  /** @type {import('tailwindcss').Config} */
-  export const content = ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"];
-  export const theme = {
-      extend: {},
-  };
-  export const plugins = [];
-5️⃣ app.css 상단에 @import "tailwindcss"; 추가
-
-<!-- # React + TypeScript + Vite
+# React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
@@ -94,4 +70,4 @@ export default defineConfig([
     },
   },
 ])
-``` -->
+```
