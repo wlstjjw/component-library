@@ -38,7 +38,7 @@
       
 ##### => 🗂 emotion 사용 시
 
-![image](https://github.com/user-attachments/assets/2cecab89-2f2d-4c03-a637-4b8ff103b391)
+<img width="541" height="831" alt="Image" src="https://github.com/user-attachments/assets/1bb4cac5-412b-4948-a323-103813f023a1" />
 
       
 ##### -> 레이아웃까지 Emotion으로 작성하면 styled 컴포넌트가 불필요하게 많아지고, 
@@ -46,7 +46,7 @@
 
 ##### => 🗂 tailwind 사용 시
 
-![image](https://github.com/user-attachments/assets/85b0b69e-6e91-4d0f-a012-5e44874a76aa)
+<img width="591" height="213" alt="Image" src="https://github.com/user-attachments/assets/3226dd2b-9c8a-44a5-89ef-24e45dd03979" />
 
 ##### - 레이아웃과 간격 정보를 구조 안에서 바로 확인할 수 있고,
 ##### 유틸리티 클래스만으로 빠르게 구조를 잡을 수 있으며 정적 CSS라 성능 부담이 적음
