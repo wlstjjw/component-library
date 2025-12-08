@@ -6,6 +6,7 @@ export interface BadgeProps {
     color: BadgeColor;
     isDot?: boolean;
     icon?: React.ReactNode;
+    text?: string;
 }
 
 export type BadgeVariant = "light" | "outlined" | "filled" | "dot"

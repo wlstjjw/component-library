@@ -13,6 +13,7 @@ export default function Badge(props: BadgeProps) {
         color,
         isDot,
         icon,
+        text = "Badge",
     } = props;
 
     return (
@@ -22,19 +23,21 @@ export default function Badge(props: BadgeProps) {
             $color={color}
             $isDot={isDot}
             $icon={icon}
+            $text={text}
         >
             {icon}
-            <span>Badge</span>
+            <StyledBadgeText $size={size}>{text}</StyledBadgeText>
         </StyledBadge>
     )
 }
 
-export const StyledBadge = styled.div<{
+export const StyledBadge = styled.span<{
     $variant: BadgeProps["variant"];
     $size: BadgeProps["size"];
     $color: BadgeProps["color"];
     $isDot: BadgeProps["isDot"];
     $icon: BadgeProps["icon"];
+    $text: BadgeProps["text"];
 }>`
     width: fit-content;
     display: inline-flex;
@@ -97,23 +100,6 @@ export const StyledBadge = styled.div<{
         }
     }};
 
-    span {
-        padding: 0rem 0.2rem;
-        white-space: nowrap;
-        font-weight: 400;
-        line-height: 1.3;
-        letter-spacing: -0.02rem;
-        font-size: ${({$size}) => {
-            switch ($size) {
-                case "s":
-                    return "1.2rem";
-                case "m":
-                    return "1.4rem";
-                case "l":
-                    return "1.6rem";
-            }
-        }};
-    }
     svg {
         display: inline-block;
         width: ${({$size}) => {
@@ -137,7 +123,7 @@ export const StyledBadge = styled.div<{
             }
         }};
     }
-    &:before {
+    &::before {
         content: ${({$variant, $isDot}) => $variant == "dot" || $isDot == true ? "''" : "unset"};
         border-radius: 999rem;
         width: ${({$size}) => $size == "l" ? "0.7rem" : "0.5rem"};
@@ -147,4 +133,24 @@ export const StyledBadge = styled.div<{
         border-style: solid;
         border-color: currentColor;
     }
+`
+
+export const StyledBadgeText = styled.span<{
+    $size: BadgeProps["size"];
+}>`
+    padding: 0rem 0.2rem;
+    white-space: nowrap;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: -0.02rem;
+    font-size: ${({$size}) => {
+        switch ($size) {
+            case "s":
+                return "1.2rem";
+            case "m":
+                return "1.4rem";
+            case "l":
+                return "1.6rem";
+        }
+    }};
 `

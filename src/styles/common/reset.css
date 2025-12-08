@@ -26,7 +26,6 @@ body {
 *::after {
   margin: 0;
   padding: 0;
-  border: 0;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -238,4 +237,9 @@ a:active {
 *::-webkit-scrollbar-track {
   border-radius: 0.4rem;
   background: transparent;
+}
+
+@import "tailwindcss";
+@theme {
+  --spacing: 1px; 
 }
